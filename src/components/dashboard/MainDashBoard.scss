@@ -1,0 +1,55 @@
+@import '../../assets/variables';
+.overview {
+  background-color:$color-grey-3;
+  flex: 1;
+}
+
+.header {
+  height: 7rem;
+  background-color:$color-white;
+  border: 1px solid $color-grey-2;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color:$color-black;
+    font-weight: 900;
+  }
+
+  &__img-box {
+    img {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+  }
+
+
+  &__btn {
+      border: none;
+      padding: 1.2rem 2.5rem;
+      background: color $color-primary-7;
+      color:$color-dark-1;
+      border-radius: 3px;
+      font-size: 1.6rem;
+      margin-right:2rem;
+      cursor: pointer;
+
+      &:focus{
+          outline: none;
+      }
+      &:hover,
+      &:active{
+          background-color:$color-primary-9;
+      }
+  }
+}

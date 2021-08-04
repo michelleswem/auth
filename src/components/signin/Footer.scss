@@ -1,0 +1,36 @@
+@import "../../assets/variables";
+@import '../../assets/mixins';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary-1;
+    position: absolute;
+    left: 3rem;
+    bottom:0;
+    @media only screen and (max-width:$bp-largest){
+      left: 35%;
+
+    }
+    @media only screen and (max-width:$bp-smallest){
+      left:20%;
+  
+      
+    }
+  
+  
+  
+
+  &__rights {
+    margin-right: 7rem;
+    @media only screen and (max-width:$bp-smallest){
+      margin-right: 2rem;
+      
+    }
+  }
+
+  &__terms {
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.filmcard {
+  &__card {
+    background-color: $color-white;
+    border-radius: 0.5rem;
+    border: 1px solid $color-dark-2;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    color: $color-dark-blue;
+  }
+
+  &__imgbox {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__paragraph1 {
+    color: $color-dark-blue-2;
+  }
+
+  &__paragraph2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__span1 {
+    color: $color-green-light;
+  }
+
+  &__span2 {
+    color: $color-grey-light-3;
+  }
+}

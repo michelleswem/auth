@@ -1,0 +1,63 @@
+
+@import '../../assets/variables';
+@import '../../assets/mixins';
+.film-item{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size:1.1rem;
+font-weight: 700;
+margin: 3rem 0;
+color:$color-dark;
+cursor: pointer;
+@media only screen and (max-width:$bp-smallest){
+   margin: 1.5rem 0;
+  
+ }
+
+&:hover{
+    background-color:$color-grey-light;
+}
+
+&__box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    &--link{
+        color:$dark-green;
+    }
+   
+}
+
+
+&__img{
+height: 3rem;
+width: 3rem;
+border-radius: 50%;
+
+}
+
+&__img-box{
+    background-color:$color-green;
+    height: 3rem;
+    width: 3rem;
+    border-radius:.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 2rem;
+        height: 2rem; 
+        
+    }
+
+}
+
+&__heading{
+    margin-left:.5rem;
+
+
+}
+
+}

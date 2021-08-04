@@ -1,0 +1,106 @@
+@import "../../assets/variables";
+@import '../../assets/mixins';
+
+.side-nav {
+  font-size: 1.4rem;
+  flex: 0 0 18%;
+  background-color: $color-white;
+
+  &__logobox {
+    text-align: center;
+    margin: 2rem 0;
+    @media only screen and (max-width:$bp-medium){
+      display: none;
+ 
+     
+   }
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+
+
+  &__list {
+    list-style: none;
+    @media only screen and (max-width:$bp-medium){
+      display: flex;
+  
+     
+   }
+  }
+
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+      @media only screen and (max-width:$bp-medium){
+        margin: 0;
+     }
+    }
+    @media only screen and (max-width:$bp-medium){
+      flex: 1; 
+   }
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color:$color-primary-2;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      background-color 0.1s;
+  }
+  &__item:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__item:active::before {
+    background-color:$color-primary-9;
+  }
+  &__link:link,
+  &__link:visited {
+    color: $color-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width:$bp-medium){
+    justify-content: center;
+    padding: 2rem;
+   }
+
+
+   @media only screen and (max-width:$bp-smallest){
+    flex-direction: column;
+    padding: 1rem 1rem;
+  
+ }
+  }
+  &__active {
+    background-color:$color-primary-2;
+  }
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width:$bp-smallest){
+      margin-right: 0;
+      margin-bottom:.7rem;
+      height: 1.5rem;
+      width: 1.5rem;
+    
+   }
+  }
+ 
+}

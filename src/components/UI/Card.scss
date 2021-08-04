@@ -1,0 +1,17 @@
+@import '../../assets/variables';
+@import '../../assets/mixins';
+    .card {
+      background-color:$color-white;
+      border-radius:1px;
+      margin:3rem;
+      border:1px solid $color-primary-9;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0,.06);
+      padding: 3rem;
+      @media only screen and (max-width:$bp-smallest){
+        margin:0;
+        padding: 1.5rem;
+      
+     }
+      
+      }
+      

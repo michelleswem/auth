@@ -1,3 +1,7 @@
+
+
+# A Demo project to grant a user access to protected resources.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

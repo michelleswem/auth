@@ -1,0 +1,41 @@
+@import "../../assets/variables";
+@import '../../assets/mixins';
+.mainbar {
+  flex: 1;
+  position: relative;
+  background-color:$color-white;
+  &__img-box {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+
+   @media only screen and (max-width:$bp-largest){
+     display: none;
+   }
+  }
+
+  &__img {
+    width: 80%;
+  }
+
+  &__signup {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    max-width:25rem;
+    @media only screen and (max-width:$bp-largest){
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width:50rem;
+    
+    }
+    @media only screen and (max-width:$bp-smallest){
+      min-width: 30rem;
+      
+    }
+    
+  }
+
+ 
+}

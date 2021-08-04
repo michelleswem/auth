@@ -1,0 +1,30 @@
+@import "../../assets/variables";
+@import '../../assets/mixins';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30%;
+  background-color:$primary-color;
+  @media only screen and (max-width:$bp-largest){
+    display: none;
+    
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 900;
+    width: 60%;
+    color: $color-primary-3;
+  }
+
+  &__box {
+    margin-top: 5rem;
+  }
+
+  &__starimage {
+    width: 100%;
+  }
+}

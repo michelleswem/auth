@@ -1,0 +1,35 @@
+
+@import '../assets/variables';
+.page {
+    text-align: center;
+    flex:1
+
+}
+
+
+.heading{
+color :$color-primary-7;
+margin: 3rem auto; 
+
+    &__main{
+        display: block;
+      font-size: 10rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      text-transform: uppercase;
+    }
+
+
+    &__sub{
+        display: block;
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing:.5rem;
+        
+    }
+}
+
+
+      
+      
+  
