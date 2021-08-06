@@ -1,5 +1,4 @@
 
-### preview here:https://starwar-app.netlify.app/
 ## A Demo project to grant a user access to protected resources.
 
 # Getting Started with Create React App
