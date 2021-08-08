@@ -27,7 +27,7 @@ const Films = () => {
     };
 
     filmRequest(
-      { url: "https://starwars-b772d-default-rtdb.firebaseio.com/movies.json" },
+      { url: "https://starwar" },
       transformFilms
     );
   }, [filmRequest]);
