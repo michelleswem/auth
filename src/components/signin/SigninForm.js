@@ -54,10 +54,10 @@ const SigninForm = () => {
     let url;
     if (isSigin) {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDtkTKBSD6v0A9IHjZ7vnwS9kzgCsp7uYo";
+        "https://identitytoolkit.googleapis.com/v1/accounts:";
     } else {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDtkTKBSD6v0A9IHjZ7vnwS9kzgCsp7uYo";
+        "https://identitytoolkit.googleapis.com/v1/accounts:";
     }
 
     fetch(url, {
