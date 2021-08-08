@@ -1,5 +1,6 @@
 
 ## A Demo project to grant a user access to protected resources.
+### Replace your api key in SignForm.js and Films.js files to appropriately run this app.
 
 # Getting Started with Create React App
 
